@@ -8,13 +8,9 @@ plugins {
     id("kotlin-parcelize")
     kotlin("kapt")
 }
-apollo{
-    service("first_time"){
+apollo {
+    service("service") {
         packageName.set("com.ayush")
-//        introspection{
-//            endpointUrl = "https://countries.trevorblades.com/"
-//            schemaFile.set(file("src/main/graphql/gaur/himanshu/graphql/schema.sdl"))
-//        }
     }
 }
 
